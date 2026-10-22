@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Master | Play Chess</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="logo">♟ Chess Master</div>
+      <p>Challenge your mind, one move at a time.</p>
+    </header>
+
+    <section class="game-layout">
+      <div class="board-area">
+        <div class="player-label">
+          <span>♚</span>
+          <span>Black</span>
+        </div>
+
+        <div id="board" class="board" aria-label="Chessboard"></div>
+
+        <div class="player-label">
+          <span>♔</span>
+          <span>White (You or your opponent)</span>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <div class="status-card">
+          <span class="eyebrow">GAME STATUS</span>
+          <h2 id="status">White to move</h2>
+          <p id="message">Select a piece to see its legal moves.</p>
+        </div>
+
+        <div class="button-group">
+          <button id="undoBtn" class="secondary">↶ Undo Move</button>
+          <button id="restartBtn" class="primary">↻ New Game</button>
+          <button id="flipBtn" class="secondary">⇅ Flip Board</button>
+        </div>
+
+        <div class="moves-card">
+          <h3>Move History</h3>
+          <div id="history" class="history">
+            No moves yet.
+          </div>
+        </div>
+
+        <p class="tip">
+          Tip: Click a piece, then click a highlighted square.
+        </p>
+      </aside>
+    </section>
+
+    <footer>
+      Made for chess lovers ♟
+    </footer>
+  </main>
+</body>
+</html>
